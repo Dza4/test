@@ -1,0 +1,105 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Шапка */
+header {
+    background-color: #604caf;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Секции */
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Контейнер */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Таблица расписания */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #a48df5;
+    color: white;
+}
+
+/* Кнопки для выбора классов */
+.class-selection {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.class-button {
+    background-color: #a48df5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.class-button.active {
+    background-color: #45a049; /* Измени цвет на свой вкус */
+}
+
+.class-button:hover {
+    background-color: #45a049;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}

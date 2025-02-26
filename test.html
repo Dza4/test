@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьный сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стиль для баннера */
+        .banner {
+            width: 100%;
+            background: #a48df5; /* Яркий желтый фон */
+            padding: 30px 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .events {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .event {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .event:hover {
+            transform: translateY(-5px);
+        }
+
+        .event h3 {
+            font-size: 24px;
+            color: #333333;
+        }
+
+        .event p {
+            font-size: 16px;
+            color: #777777;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #7563b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #7563b5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Моу Дедовская Сош №1</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#events">События</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Добро пожаловать в нашу школу!</h2>
+            <p>Здесь вы найдете всю необходимую информацию: расписание, контакты и многое другое.</p>
+        </div>
+    </section>
+
+    <!-- Баннер с событиями -->
+    <section id="events">
+        <div class="banner">
+            <h1>Предстоящие События и Праздники</h1>
+            <div class="events">
+                <div class="event">
+                    <h3>Масленица</h3>
+                    <p>25 февраля - 3 марта. Погружайтесь в атмосферу традиционных гуляний! Блины, игры и веселье для всей семьи.</p>
+                    <a href="maslenitsa.html" class="btn">Узнать больше</a>
+                </div>
+                <div class="event">
+                    <h3>День защитника Отечества</h3>
+                    <p>23 февраля. Поздравляем всех мужчин! Специальные акции и мероприятия.</p>
+                    <a href="defender.html" class="btn">Узнать больше</a>
+                </div>
+                <div class="event">
+                    <h3>8 Марта — Международный Женский День</h3>
+                    <p>Подарки, сюрпризы и поздравления для всех женщин!</p>
+                    <a href="march8.html" class="btn">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Адрес: ул. Гагарина, 6, Дедовск</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Email: school@example.com</p>
+            <p>vk: https://vk.com/dedovskay1</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Моу Дедовская Сош 1. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
